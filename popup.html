@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+    <meta>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400&display=swap" rel="stylesheet">
+    </meta>
+    <style>
+        p, h1, textarea {
+            font-family: 'League Spartan', sans-serif;
+        } 
+        body {
+            text-align: center;
+        }
+        p {
+            text-align: left;
+            padding: 2px;
+            font-size: 15px;
+        }
+
+    </style>
+    <body style="margin:0;padding:0;">
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400&display=swap" rel="stylesheet">
+
+        <style>
+           #main {
+                        margin:0;
+                        padding:0;
+                        border:0;
+                        background-color: #3c1b43ff;
+                        height: 100px;
+                        width:100%;
+                        
+                    }
+                    body {
+                        margin:0;
+                        padding:0;
+                        border:0;
+                        width:250px;
+                        height:400px;
+                    }
+                    #factfully-logo {
+                        height:100px;
+                        float:left;
+                    }
+                    #factfully-logo-text {
+                        height:100px;
+                        color:white;
+                        font-family:'League Spartan', sans-serif;
+                        padding-top:25px;
+                        font-weight:900px;
+                        margin:0;
+                        position:absolute;
+                    }
+                    #factfully-logo-text-p {
+                        font-size: 20px;
+                        margin-top: 5px;
+                        font-weight:50;
+                        margin-left:80px;
+                    }
+        </style>
+        <div id="main">
+        <img id="factfully-logo" src="./img/factfully-logo-white.png"/>
+        <h1 id="factfully-logo-text">factfully<br><p id="factfully-logo-text-p">because the truth matters.</p></h1>
+        </div>        <div id="entry">
+            <h1>Enter phrase</h1>
+            <textarea id="phrase"></textarea>
+            <br>
+            <button id='but' onclick="check()">Check!</button>
+            <br>
+        </div>
+        <h1 id="rel">Related Misinformation<hr></h1>
+        <p id="space"></p>
+    </body>
+    <script src="popup.js"></script>
+</html>

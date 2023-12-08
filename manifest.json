@@ -1,0 +1,43 @@
+{
+   "author": "factfully",
+   "background": {
+      "service_worker": "script.js"
+   },
+   "action": {
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "js": [ "jquery/jquery-3.3.1.min.js", "content.js" ],
+      "matches": [ "\u003Call_urls>" ]
+   } ],
+
+   "declarative_net_request": {
+      "rule_resources": [
+          {
+              "id": "ruleset_1",
+              "enabled": true,
+              "path": "rules.json"
+          }
+      ]
+  },
+   "description": "Factfully warns you about fake news on websites.",
+   "homepage_url": "http://www.newslens.co.uk/",
+   "icons": {
+      "128": "img/icon128.png",
+      "16": "img/icon16.png",
+      "32": "img/icon32.png",
+      "48": "img/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAls+Y6ePHcZr+J9ynNY0bNOl5704/Y9eWffAT77yL8NUvtv7Jf95YBU/yyD4SuNWDSVc43iuWcvzcR/WUphZ1xk/n6hBFJPV7HO4eSQpO71WNUas0VyBs8Flya3PlaSCAPBRKV37yDIJABAby+753gvHwKoIsMjXxz3DlZ33aVMfawlnQX0o2sLFRDLc/zwIF7/viLeGS0YipsbxpmaER8yKGZqlCah4JlyfH6tIkewIyxBzEvSdB5stBFlA0ese/CpGeH9x2f/KUXBJmt7ee2jvAasYnNwkGe/qz1Tq9tqVB3yRvvSpHUihZndN+JK9C3UrxQOtOPAAPTQgyTuC9OQIDAQAB",
+   "manifest_version": 3,
+   "name": "factfully",
+   "permissions": [ "activeTab",  "tabs", "contextMenus", "storage", "declarativeNetRequestWithHostAccess"],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.3",
+   "web_accessible_resources": [ 
+      {
+         "resources": ["opensources/sources/sources.json"],
+         "matches": [ "<all_urls>" ]
+      } 
+   ]
+}
