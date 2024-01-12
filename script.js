@@ -8,7 +8,7 @@ chrome.contextMenus.removeAll(() => {
 
 
 async function check_fr(text) {
-  let url = "http://127.0.0.1:5000/?text="+text;
+  let url = "http://factfully.riverdale.edu:5000/?text="+text;
   chrome.windows.create({
     url: url,
     type: "popup",
